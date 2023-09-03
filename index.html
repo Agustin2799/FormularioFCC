@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <h1>Ejemplo de Encuesta</h1>
+    <p id="description">Descripció Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sequi adipisci.
+        Ullam praesentium, tempore eligendi asperiores, illo repellendus dolorem laboriosam aliquid error, rem dolores
+        numquam adipisci eveniet sunt ea vitae?</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Nombre: <input id="name" type="text" required
+                    placeholder="Ingrese su nombre..."></label>
+            <label id="email-label" for="email">Email: <input id="email" type="email" required
+                    placeholder="Ingrese su email..."></label>
+            <label id="number-label" for="number">Edad: <input id="number" type="number" min="18" max="38"
+                    placeholder="Ingrese su edad..."></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Elija entre estas dos opciones:
+                <select name="opciones" id="dropdown">
+                    <option id="falsoPlaceholder" value="">Seleccione una opción...</option>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                </select>
+            </label>
+            <label for="radio1"><input id="radio1" type="radio" name="radios" value="Opción 1"> Opción check 1</label>
+            <label for="radio2"><input id="radio2" type="radio" name="radios" value="Opción 2"> Opción check 2</label>
+        </fieldset>
+        <fieldset>
+            <label for="check1"><input id="check1" type="checkbox" value="acepta-terminos" required> Acepto los términos y
+                condiciones.</label>
+            <label for="check2"><input id="check2" type="checkbox"
+                value="enviar-info"> Envíame más información a mi email.</label>
+            <label for="comentarios">Comentarios: <textarea rows="5" cols="35" placeholder="Ingrese sus comentarios..."></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit" value="Enviar formulario"/>
+
+    </form>
+</body>
+
+</html>

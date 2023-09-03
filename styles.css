@@ -1,0 +1,147 @@
+body {
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  min-width: 400px;
+  background-color: rgb(100, 109, 237);
+  font-family:sans-serif;
+}
+H1,
+p {
+  text-align: center;
+  margin: 1rem;
+  color: white;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  min-width: 351px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.267),
+    rgb(100, 109, 237)
+  );
+  padding: 1rem;
+  border-radius: 10px;
+}
+#name,
+#email,
+#number {
+  width: 100%;
+  position: relative;
+  padding-left: 5%;
+}
+input,
+select {
+  height: 1.6rem;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Puede ser necesario ajustar el margen si queda espacio vacío */
+}
+select {
+  width: 100%;
+  padding: 3px 0px 3px 10px;
+  height: 1.6rem;
+}
+select option {
+  margin: 5px;
+}
+select{
+   background-color:  rgba(66, 63, 63, 0.708);
+}
+fieldset {
+  border: none;
+  border-bottom: 1px aquamarine solid;
+  margin-bottom: 10px;
+}
+fieldset:last-of-type {
+  border: none;
+}
+textarea {
+  width: 100%;
+  margin: 0 auto;
+  padding: none;
+  padding-left: 5%;
+  resize: none;
+  height: auto;
+  border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 7px;
+  background-color:none;
+  border-radius: 5px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: 1px solid rgb(62, 61, 61);
+}
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  transition: 0.5s color ease;
+}
+label:hover {
+  color: white;
+  transition: 0.5s color ease;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  border: 1px rgb(62, 61, 61) solid;
+  width: 10px;
+  height: 10px;
+  margin-top: -1px;
+    transition: 0.5s margin-right ease;
+}
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  margin-right: 10px;
+  transition: 0.5s margin-right ease;
+  background-color: aquamarine;
+  box-shadow: 0px 0px 3px blue;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: aquamarine;
+}
+select,
+input,
+textarea {
+  background-color: rgba(66, 63, 63, 0.708);
+  appearance: none;
+  border: 1px solid rgb(62, 61, 61);
+  outline: none;
+  margin-top: 0.5rem;
+  color: beige;
+  box-sizing: border-box;
+}
+input::placeholder,
+textarea::placeholder,
+select {
+  color: aquamarine;
+  font-family:sans-serif;
+}
+
+#submit{
+   width: 50%;
+  margin: 0 25%;
+  background-color: rgb(46, 157, 120);
+  color: rgb(0, 0, 0);
+  margin-top: -20px;
+   transition: 0.5s background-color ease, 0.5s width ease,0.5s margin ease, 1s box-shadow ease;
+}
+#submit:hover{
+  background-color: rgb(68, 226, 173);
+  box-shadow: 0px 0px 10px blue;
+  width: 60%;
+  margin: 0 20%;
+  transition: 0.5s background-color ease, 0.5s width ease,0.5s margin ease, 1s box-shadow ease;
+   margin-top: -20px;
+}
